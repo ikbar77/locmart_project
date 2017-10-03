@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Locmart</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="store">STORE</string>
+    <string name="action_settings">Settings</string>
+    <string name="alfamart">Alfamart</string>
+    <string name="indomart">Indomart</string>
+    <string name="giant">Giant</string>
+    <string name="superindo">Super Indo</string>
+    <string name="lottemart">LotteMart</string>
+    <string name="hypermart">Hypermart</string>
+</resources>

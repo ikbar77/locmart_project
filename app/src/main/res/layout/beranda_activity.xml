@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ikbar.locmart.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="175sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout2"
+        android:src="@color/blue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Image"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_above="@+id/indomaret_btn"
+            android:layout_alignStart="@+id/alfamart_btn" />
+
+        <Button
+            android:id="@+id/alfamart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="74dp"
+            android:background="@drawable/alfamartbtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/indomaret_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/alfamart_btn"
+            android:layout_alignBottom="@+id/alfamart_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/indomaretbtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp" />
+
+        <Button
+            android:id="@+id/giant_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/alfamart_btn"
+            android:layout_below="@+id/alfamart_btn"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/giantbtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp" />
+
+        <Button
+            android:id="@+id/superindo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/giant_btn"
+            android:layout_alignBottom="@+id/giant_btn"
+            android:layout_alignStart="@+id/indomaret_btn"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/superindobtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp" />
+
+        <Button
+            android:id="@+id/lottemart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/giant_btn"
+            android:layout_below="@+id/giant_btn"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/lottemartbtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp" />
+
+        <Button
+            android:id="@+id/hypermart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lottemart_btn"
+            android:layout_alignBottom="@+id/lottemart_btn"
+            android:layout_alignStart="@+id/superindo_btn"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/hypermartbtn"
+            android:minHeight="50dp"
+            android:minWidth="140dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

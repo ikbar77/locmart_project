@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="All Promo" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="All Store" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="All Product" />
+
+    </group>
+
+
+</menu>
