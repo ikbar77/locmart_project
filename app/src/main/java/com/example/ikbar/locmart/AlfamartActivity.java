@@ -13,14 +13,14 @@ import android.support.v7.app.AppCompatActivity;
  * Created by IKBAR on 9/27/2017.
  */
 
-public class AlfmartActivity extends AppCompatActivity {
+public class AlfamartActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alfmart_activity);
+        setContentView(R.layout.alfamart_activity);
 
         ActionBar menu = getSupportActionBar();
         menu.setDisplayShowHomeEnabled(true);

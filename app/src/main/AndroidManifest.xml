@@ -20,23 +20,29 @@
         </activity>
 
         <activity
-            android:name=".AlfmartActivity"
-            android:label="@string/alfamart"></activity>
+            android:name=".AlfamartActivity"
+            android:label="@string/alfamart"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".IndomartActivity"
-            android:label="@string/indomart"></activity>
+            android:label="@string/indomart"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".GiantActivity"
-            android:label="@string/giant"></activity>
+            android:label="@string/giant"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".HypermartActivity"
-            android:label="@string/hypermart"></activity>
+            android:label="@string/hypermart"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".LottemartActivity"
-            android:label="@string/lottemart"></activity>
+            android:label="@string/lottemart"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".SuperindoActivity"
-            android:label="@string/superindo"></activity>
+            android:label="@string/superindo"
+            android:parentActivityName=".MainActivity"></activity>
 
     </application>
 
