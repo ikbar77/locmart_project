@@ -4,8 +4,6 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         btn_alfamart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AlfmartActivity.class);
+                Intent intent = new Intent(MainActivity.this, AlfamartActivity.class);
                 startActivity(intent);
             }
         });

@@ -18,8 +18,7 @@
         android:layout_width="match_parent"
         android:id="@+id/pager_alfa"
         android:layout_height="match_parent"
-        android:layout_below="@id/img_view_alfa"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_below="@id/img_view_alfa">
 
     </android.support.v4.view.ViewPager>
 
