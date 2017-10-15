@@ -23,6 +23,8 @@ public class LottemartActivity extends AppCompatActivity {
         menu.setDisplayShowHomeEnabled(true);
         menu.setDisplayHomeAsUpEnabled(true);
 
+
+
         tabLayout = (TabLayout) findViewById(R.id.tabs_lotte);
         viewPager = (ViewPager) findViewById(R.id.pager_lotte);
 
@@ -45,5 +47,7 @@ public class LottemartActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
