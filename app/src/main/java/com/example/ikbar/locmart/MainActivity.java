@@ -4,7 +4,8 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,26 +17,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.SearchView;
-
-import com.example.ikbar.locmart._sliders.FragmentSlider;
-import com.example.ikbar.locmart._sliders.SliderIndicator;
-import com.example.ikbar.locmart._sliders.SliderPagerAdapter;
-import com.example.ikbar.locmart._sliders.SliderView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private Button btn_alfamart, btn_indomart, btn_giant, btn_superindo, btn_hypermart, btn_lottemart;
-
-    private SliderPagerAdapter mAdapter;
-    private SliderIndicator mIndicator;
-
-    private SliderView sliderView;
-    private LinearLayout mLinearLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,14 +44,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        sliderView = (SliderView) findViewById(R.id.sliderView);
-        mLinearLayout = (LinearLayout) findViewById(R.id.pagesContainer);
-        setupSlider();
-
         btn_alfamart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AlfamartActivity.class);
+                Intent intent = new Intent(MainActivity.this, AlfmartActivity.class);
                 startActivity(intent);
             }
         });
@@ -165,20 +146,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    private void setupSlider() {
-        sliderView.setDurationScroll(800);
-        List<Fragment> fragments = new ArrayList<>();
-        fragments.add(FragmentSlider.newInstance("http://www.takeprize.com/uploads/1933.jpg"));
-        fragments.add(FragmentSlider.newInstance("https://image01.kota.com/20140403023925/0000/0000/0001/1119/alfamidi_31082015.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.hargapromo.biz/wp-content/uploads/2015/06/Katalog-harga-promo-indomaret-super-heboh-periode-25-juni-1-juli-2015-2.jpg"));
-        fragments.add(FragmentSlider.newInstance("https://image01.kota.com/20140403023925/0000/0000/0001/0248/alfamidi_04082015.jpg"));
-
-        mAdapter = new SliderPagerAdapter(getSupportFragmentManager(), fragments);
-        sliderView.setAdapter(mAdapter);
-        mIndicator = new SliderIndicator(this, mLinearLayout, sliderView, R.drawable.indicator_circle);
-        mIndicator.setPageCount(fragments.size());
-        mIndicator.show();
     }
 }
