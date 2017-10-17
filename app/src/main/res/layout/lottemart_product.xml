@@ -21,12 +21,12 @@
         />
 
     <Spinner
-        android:id="@+id/spinner_alfa"
-        android:layout_width="130dp"
+        android:id="@+id/spinner_lottemart"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="220dp"
         android:prompt="@string/spinner_name"
 
         >
