@@ -25,7 +25,6 @@ public class AlfamartActivity extends AppCompatActivity {
         ActionBar menu = getSupportActionBar();
         menu.setDisplayShowHomeEnabled(true);
         menu.setDisplayHomeAsUpEnabled(true);
-
         tabLayout = (TabLayout) findViewById(R.id.tabs_alfa);
         viewPager = (ViewPager) findViewById(R.id.pager_alfa);
         final SectionsPagerAdapterAlfamart adapter = new SectionsPagerAdapterAlfamart(getSupportFragmentManager(), tabLayout.getTabCount());
