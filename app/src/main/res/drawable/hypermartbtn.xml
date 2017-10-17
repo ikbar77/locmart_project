@@ -2,13 +2,13 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Mendefinisikan button saat di klik -->
-    <item android:drawable="@drawable/hypermart"
+    <item android:drawable="@drawable/hypermat"
         android:state_pressed="true" />
 
     <!-- Mendefinisikan button saat terfokus -->
-    <item android:drawable="@drawable/hypermart"
+    <item android:drawable="@drawable/hypermat"
         android:state_focused="true" />
 
     <!-- Mendefinisikan button saat dalam kondisi normal -->
-    <item android:drawable="@drawable/hypermart" />
+    <item android:drawable="@drawable/hypermat" />
 </selector>

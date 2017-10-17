@@ -12,4 +12,7 @@
     <string name="lottemart">LotteMart</string>
     <string name="hypermart">Hypermart</string>
     <string name="search">Search</string>
+    <string name="tab_produk">Product</string>
+    <string name="tab_location">Location</string>
+    <string name="spinner_name">Filter</string>
 </resources>
